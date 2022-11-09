@@ -1,1 +1,42 @@
-<p>login works!</p>
+<div class="container">
+  <div class="conteudo-login">
+    <div class="logo">
+      <img class="img-responsive" src="./../../../assets/images/test.png" />
+    </div>
+    <form class="conteudo-form" [formGroup]="loginForm">
+      <!-- Esse é o grupo de campo de email -->
+      <div class="form-group">
+        <div class="field-group">
+          <div class="field-name">Email</div>
+          <input class="input-login" formControlName="email" />
+        </div>
+        <div class="mensagem-error"
+          *ngIf="loginForm.get('email')?.errors?.['required'] && loginForm.get('email')?.touched">
+          Campo Obrigatório
+        </div>
+        <div class="mensagem-error"
+          *ngIf="loginForm.get('email')?.errors?.['email'] && loginForm.get('email')?.touched">
+          Formato do Email não é valído!!!
+        </div>
+        <!-- Esse é o grupo de campo de senha -->
+        <div class="field-group">
+          <div class="field-name">Senha</div>
+          <input class="input-login" formControlName="senha" />
+        </div>
+        <div class="mensagem-error"
+          *ngIf="loginForm.get('senha')?.errors?.['required'] && loginForm.get('senha')?.touched">
+          Campo Obrigatório
+        </div>
+
+        <button class="button-submit-entrar" type="submit">Entrar</button>
+      </div>
+    </form>
+  </div>
+  <div class="conteudo-lateral-login">
+    <div class="content">
+      <div class="text-login">
+        <p>Um projeto<br /> <b class="direita-palavra">desenvolvido</b><br /> com Angular!!!</p>
+      </div>
+    </div>
+  </div>
+</div>

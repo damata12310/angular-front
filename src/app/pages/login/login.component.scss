@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.container {
+  background-color: #fff;
+  position: relative;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.conteudo-lateral-login {
+  background-color: #00b7ff;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.conteudo-login {
+  width: 100%;
+  max-width: 670px;
+  height: 100vh;
+  overflow-y: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 115px;
+  box-shadow: 0 30px 40px 0 #333;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.logo {
+  margin-top: 10vh;
+  border: dotted 2px #333;
+}
+
+.img-responsive {
+  width: 120px;
+  height: 120px;
+}
+
+.conteudo-login:hover {
+  box-shadow: 0 30px 70px 0 #000;
+
+  .logo {
+    border: dotted 2px transparent;
+  }
+}
+
+.conteudo-form {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .button-submit-entrar {
+    margin-top: 5vh;
+    width: 100%;
+    background-color: #00b7ff;
+    border: 1px solid #bfbfbf;
+    border-radius: 2px;
+    height: 34px;
+    font-size: 16px;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .button-submit-entrar:hover {
+    box-shadow: 0 0px 10px 0 #333;
+  }
+}
+
+div.input-login {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 25%;
+}
+
+.input-login {
+  border: none;
+  width: 99%;
+  height: 34px;
+  background: #fff;
+  border: 1px solid #bfbfbf;
+  border-radius: 2px;
+  box-shadow: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.input-login:hover {
+  box-shadow: 0 0px 10px 0 #333;
+}
+
+.field-group {
+  width: 100%;
+  text-align: left;
+  color: #333;
+  margin-top: 2vh;
+
+  .field-name {
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1vh;
+  }
+}
+
+.mensagem-error {
+  font-size: 14px;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-login {
+  font-size: 60px;
+  font-weight: 500;
+  color: #333;
+  text-transform: uppercase;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 12vh;
+}
